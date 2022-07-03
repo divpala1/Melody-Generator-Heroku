@@ -130,7 +130,7 @@ def predict():
 
 @app.route('/download')
 def download_file():
-    p = "GeneratedMusic/melody.mid"
+    p = "melody.mid"
     return send_file(p, as_attachment=True)
 
 if __name__ == "__main__":
