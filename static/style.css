@@ -1,0 +1,97 @@
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+h1 {
+    margin: 0;
+    position: center;
+}
+
+.form {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+input[type=text] {
+    border: none;    
+    width: 50%;
+    padding: 18px 20px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #4d7087;
+    border-radius: 50px;
+    color: #e4d8d5;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+}
+
+input[type=text]:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 10px 50px #cb8a81;
+    background-color: #dda8a1;
+    font-weight: bold;
+}
+
+.bg {
+    background-image: url("https://i.stack.imgur.com/SvWWN.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.title {
+    position: relative;
+    border-radius: 50px;
+    top: 25%;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 30px;
+    background-color: #e4d8d5;
+}
+
+.submit {
+    background-color: #dda8a1;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.submit:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 10px 50px #dda29b;
+    background-color: #dda8a1;
+}
+
+a:link {
+    text-decoration: none;
+    background-color: #97dd9f;
+    position: absolute;
+    border: none;
+    color: white;
+    padding: 20px 32px;
+    margin-top: 21%;
+    margin-left: 45%;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+a:link:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 10px 40px #a9e4b0;
+}
