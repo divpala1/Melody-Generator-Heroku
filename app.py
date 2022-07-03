@@ -73,7 +73,7 @@ class MelodyGenerator:
         
         return melody
     
-    def save_melody(self, melody, step_duration=0.25, format="midi", file_name="GeneratedMusic/melody.mid"):
+    def save_melody(self, melody, step_duration=0.25, format="midi", file_name="melody.mid"):
         # Create a music21 stream
         stream = m21.stream.Stream()
         
