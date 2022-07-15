@@ -16,7 +16,7 @@
         </div>
         <div class="form">
             <form action="{{ url_for('predict') }}" method="post">
-                <input type="text" name="melody" required="required" />
+                <input type="text" name="melody" required="required" placeholder="Input a combination of a number between 50-80 and '_' separated by space. E.g. 65 _ 50 _"/>
                 <div>
                     <button class="submit" type="submit">Generate</button>
                 </div>
