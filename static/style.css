@@ -1,4 +1,9 @@
-body, html {
+body,
+html {
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 100%;
     margin: 0px;
 }
@@ -6,6 +11,26 @@ body, html {
 h1 {
     margin: 0;
     position: center;
+}
+
+.title {
+    position: relative;
+    transform: skew(-25deg);
+    top: 25%;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    padding: 5px;
+    font-size: 30px;
+    background-color: #eceff7;
+    border: 10px solid #181818;
+    border-style: ridge;
+}
+
+.title :hover {
+    color: #eceff7;
+    background-color: #181818;
+    transition: all 0.75s ease-in-out;
 }
 
 .form {
@@ -16,14 +41,15 @@ h1 {
 }
 
 input[type=text] {
-    border: none;    
+    border: none;
     width: 50%;
     padding: 20px 30px;
     margin: 10px 0;
     box-sizing: border-box;
-    background-color: #4d7087;
-    border-radius: 50px;
-    color: #e4d8d5;
+    background-color: #eceff7;
+    transform: skew(-25deg);
+    border: 10px solid black;
+    border-style: ridge;
     font-size: 27px;
     text-align: center;
     font-weight: bold;
@@ -32,8 +58,7 @@ input[type=text] {
 
 input[type=text]:hover {
     transition: all 0.5s ease-in-out;
-    box-shadow: 0 10px 50px #cb8a81;
-    background-color: #dda8a1;
+    box-shadow: 0 10px 50px #fff9d4;
     font-weight: bold;
     width: 60%;
 }
@@ -46,60 +71,67 @@ input[type=text]:hover {
 }
 
 .bg {
-    background-image: url("https://i.stack.imgur.com/SvWWN.png");
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
-}
-
-.title {
-    position: relative;
-    border-radius: 50px;
-    top: 25%;
-    text-align: center;
-    margin: auto;
-    width: 40%;
-    padding: 15px;
-    font-size: 30px;
-    background-color: #e4d8d5;
 }
 
 .submit {
-    background-color: #dda8a1;
+    background-color: #181818;
     border: none;
     color: white;
-    padding: 20px 32px;
-    margin-top: 15px;
+    padding: 10px 32px;
+    margin-top: 0.5vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    border-radius: 25px;
+    font-size: 25px;
+    border: 10px solid #eceff7;
+    border-style: double;
+    transform: skew(-20deg);
 }
 
 .submit:hover {
-    transition: all 0.5s ease-in-out;
-    box-shadow: 0 10px 50px #dda29b;
-    background-color: #dda8a1;
+    transition: 1s ease-in-out;
+    box-shadow: 0 10px 50px #fff9d4;
+    color: #181818;
+    background-color: #fff5b2;
 }
 
 a:link {
     text-decoration: none;
-    background-color: #97dd9f;
+    background-color: #eceff7;
     position: absolute;
-    border: none;
-    color: white;
-    padding: 20px 32px;
-    margin-top: 21%;
-    margin-left: 45%;
+    border: 10px solid #181818;
+    border-style: double;
+    color: #181818;
+    padding: 10px 32px;
+    margin-top: 50vh;
+    margin-left: 43vw;
     text-align: center;
-    font-size: 20px;
-    border-radius: 25px;
+    font-size: 25px;
+    transform: skew(-20deg);
 }
 
 a:link:hover {
     transition: all 0.5s ease-in-out;
-    box-shadow: 0 10px 40px #a9e4b0;
+    box-shadow: 0 10px 40px #fff5b2;
+    background-color: #fff5b2;
+    border: #eceff7 10px solid;
+    border-style: double;
+}
+
+@media screen and (max-width: 960px) {
+    .title {
+        width: 80vw;
+        font-size: x-large;
+    }
+
+    input[type=text] {
+        margin-top: 0px;
+        margin-bottom: 3vh;
+    }
+
+    a:link {
+        margin-left: 30vw;
+    }
 }
